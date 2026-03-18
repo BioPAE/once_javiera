@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto Final - Sistema de Torneos</title>
+    <style>
+        /* CSS Básico - 3 Estilos Diferentes */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        th, td {
+            border: 1px solid #083fd6;
+            padding: 12px;
+            text-align: center;
+        }
+
+        /* Estilo 1: Encabezado destacado */
+        thead {
+            background-color: #af2b2b;
+            color: white;
+        }
+
+        /* Estilo 2: Cebra para filas de equipos */
+        tbody tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+
+        /* Estilo 3: Resaltado de pie de tabla y Campeón */
+        tfoot {
+            background-color: #8a9ef5;
+            font-weight: bold;
+        }
+        
+        .campeon-text {
+            color: #d35400;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">TORNEO PRIMER SEMESTRE 2026 - CLASIFICACIÓN FINAL</th>
+            </tr>
+            <tr>
+                <th>Región</th>
+                <th>Equipo</th>
+                <th>PJ</th>
+                <th>G</th>
+                <th>E</th>
+                <th>Puntos</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2">    <em>equipos de A</em></td>
+                <td>Atletico nacional</td>
+                <td>11</td>
+                <td>8</td>
+                <td>0</td>
+                <td>24</td>
+                <td>Clasificado</td>
+            </tr>
+            <tr>
+                <td>once caldas</td>
+                <td>11</td>
+                <td>6</td>
+                <td>4</td>
+                <td>22</td>
+                <td>Eliminado</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2">Equipos de B</td>
+                <td>inter palmira</td>
+                <td>12</td>
+                <td>6</td>
+                <td>4</td>
+                <td>22</td>
+                <td>Clasificado</td>
+            </tr>
+            <tr>
+                <td>Quindío</td>
+                <td>11</td>
+                <td>5</td>
+                <td>4</td>
+                <td>20</td>
+                <td>Eliminado</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Total de Participantes: 4 Equipos</td>
+                <td colspan="3">CAMPEÓN ACTUAL: <span class="campeon-text">Atletico nacional</span></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
