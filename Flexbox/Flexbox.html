@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta de Perfil - Flexbox</title>
+  <style>
+    /* RESET Y ESTILOS BASE */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #4b0a0a;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      display: flex;             /* FLEX 1: Para centrar la tarjeta en pantalla */
+      justify-content: center;   /* JUSTIFY-CONTENT 1 */
+      align-items: center;       /* ALIGN-ITEMS */
+      min-height: 100vh;
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .profile-card {
+      background: rgb(255, 255, 255);
+      width: 350px;
+      padding: 25px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(161, 48, 48, 0.08);
+      
+      display: flex;             /* FLEX 2 */
+      flex-direction: column;    /* FLEX-DIRECTION: columna */
+      align-items: center;       /* ALIGN-ITEMS */
+      gap: 20px;                 /* GAP */
+    }
+
+    /* HEADER Y AVATAR */
+    .header-section {
+      display: flex;             /* FLEX 3 */
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #4f46e5;
+      object-fit: cover;
+    }
+
+    .user-info {
+      text-align: center;
+    }
+
+    .user-info h1 {
+      font-size: 1.4rem;
+      color: #1f2937;
+    }
+
+    .user-info span {
+      color: #6366f1;
+      font-weight: 500;
+    }
+
+    .bio {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.4;
+    }
+
+    /* ESTADÍSTICAS */
+    .stats-container {
+      display: flex;             /* FLEX 4 */
+      width: 100%;
+      justify-content: space-around; /* JUSTIFY-CONTENT 2 */
+      padding: 15px 0;
+      border-top: 1px solid #f3f4f6;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #111827;
+    }
+
+    .stat-item p {
+      font-size: 0.75rem;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* BOTONES */
+    .actions-container {
+      display: flex;             /* FLEX 5 */
+      width: 100%;
+      gap: 12px;
+    }
+
+    .btn {
+      flex: 1;                   /* FLEX: 1 (crece equitativamente) */
+      padding: 12px;
+      border-radius: 12px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover { opacity: 0.9; }
+
+    .btn-primary { background: #4f46e5; color: white; }
+    .btn-secondary { background: #f3f4f6; color: #1f2937; }
+
+    /* MINIATURAS DE PROYECTOS */
+    .projects-grid {
+      display: flex;             /* FLEX 6 */
+      flex-wrap: wrap;           /* FLEX-WRAP */
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .projects-grid img {
+      width: 90px;
+      height: 70px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <header class="header-section">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2tA93cHNVrzi6mJuHmLVcH6pqTNCvM16iA&s" alt="Avatar" class="avatar">
+      <div class="user-info">
+        <h1>Tomas Agudelo</h1>
+        <span>@taj__03</span>
+      </div>
+    </header>
+
+    <p class="bio">Desarrollador, amante de los juegos y creador de contenido.</p>
+
+    <div class="stats-container">
+      <div class="stat-item">
+        <strong>65</strong>
+        <p>Proyectos</p>
+      </div>
+      <div class="stat-item">
+        <strong>200k</strong>
+        <p>Seguidores</p>
+      </div>
+      <div class="stat-item">
+        <strong>15</strong>
+        <p>Siguiendo</p>
+      </div>
+    </div>
+
+    <div class="actions-container">
+      <button class="btn btn-primary">Seguir</button>
+      <button class="btn btn-secondary">Mensaje</button>
+    </div>
+
+    <div class="projects-grid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_f7TRPYfo6KhlwCDqvMr9hI11TquF9JZkAxrzAtFKfsFlGNbUHoYmwD-aNxA2OK-GktxgqXhgtX3FxBfQ5kSMPl-XTP0xeKJlBlmhIU&s" alt="P1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmHZ5c76mgfsADek9MmeTNkjLffhQvPEywxQ&s" alt="P2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhwR2xfWnZ1dh5lg2rdgpgnHbKI-hu6EDwA&s" alt="P3">
+    </div>
+  </div>
+
+</body>
+</html>
