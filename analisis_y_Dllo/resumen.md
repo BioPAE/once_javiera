@@ -1,0 +1,9 @@
+El análisis y diseño de software son procesos esenciales para crear sistemas eficientes y útiles. Antes de programar, es necesario comprender las necesidades de los usuarios, identificar los problemas que se deben resolver y planificar la mejor forma de desarrollar la solución. Una buena preparación ayuda a evitar errores costosos y aumenta las probabilidades de éxito del proyecto.
+
+El desarrollo de software sigue un conjunto de etapas conocidas como ciclo de vida del software. Estas incluyen la identificación de requerimientos, la elaboración del diseño, la programación, las pruebas, la puesta en funcionamiento y el mantenimiento. Cada fase cumple una función importante para garantizar la calidad del producto final.
+
+Para gestionar los proyectos existen diferentes metodologías. Las tradicionales o estructuradas se apoyan en una planificación detallada y son recomendables cuando los requisitos están claramente definidos. Las metodologías ágiles, en cambio, permiten realizar cambios con facilidad, trabajar por entregas cortas y mantener una comunicación constante con el cliente.
+
+Los requisitos del sistema representan las características y funciones que debe cumplir el software. Estos pueden ser funcionales, relacionados con las tareas que realiza el sistema, o no funcionales, enfocados en aspectos como seguridad, velocidad y disponibilidad. Además, deben redactarse de forma clara, específica y verificable para evitar confusiones durante el desarrollo.
+
+En síntesis, un proyecto de software exitoso requiere una adecuada planificación, una definición precisa de los requisitos y la selección de una metodología acorde con las necesidades del proyecto, permitiendo así obtener soluciones confiables y de calidad.
